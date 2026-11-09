@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">Bezpieczny Kampus</string>
+
+    <!-- Dolny pasek nawigacji -->
+    <string name="zakladka_alarmy">Alarmy</string>
+    <string name="zakladka_oglos">Ogłoś</string>
+    <string name="zakladka_statystyki">Statystyki</string>
+    <string name="zakladka_ustawienia">Ustawienia</string>
+
+    <!-- Rodzaje zagrożeń, zachowania, statusy -->
+    <string name="zagrozenie_pozar">Pożar</string>
+    <string name="zagrozenie_z_powietrza">Zagrożenie z powietrza</string>
+    <string name="zagrozenie_wyciek">Wyciek substancji</string>
+    <string name="zagrozenie_przedmiot">Podejrzany przedmiot</string>
+    <string name="zagrozenie_inne">Inne</string>
+    <string name="zachowanie_ewakuacja">Ewakuuj się z budynku</string>
+    <string name="zachowanie_schronienie">Udaj się do schronienia</string>
+    <string name="zachowanie_pozostan">Pozostań w pomieszczeniu</string>
+    <string name="status_aktywny">Aktywny</string>
+    <string name="status_zaktualizowany">Zaktualizowany</string>
+    <string name="status_odwolany">Odwołany</string>
+    <string name="znacznik_test">TEST · %1$s</string>
+    <string name="motyw_systemowy">Zgodnie z systemem</string>
+    <string name="motyw_jasny">Jasny</string>
+    <string name="motyw_ciemny">Ciemny</string>
+
+    <!-- Ekran listy -->
+    <string name="lista_tytul">Alarmy na kampusie</string>
+    <string name="lista_szukaj">Szukaj (tytuł lub budynek)</string>
+    <string name="lista_pusto">Brak alarmów spełniających wybrane kryteria</string>
+    <string name="filtr_wszystkie">Wszystkie</string>
+    <string name="filtr_tylko_aktywne">Tylko aktywne</string>
+    <string name="filtr_moj_budynek">Mój budynek</string>
+    <string name="ogloszono">Ogłoszono: %1$s</string>
+    <string name="brak_budynku">Nieznany budynek</string>
+    <string name="wybierz_alarm">Wybierz alarm z listy, aby zobaczyć szczegóły</string>
+
+    <!-- Ekran szczegółów -->
+    <string name="szczegoly_tytul">Szczegóły alarmu</string>
+    <string name="opis_wstecz">Wróć do listy alarmów</string>
+    <string name="szczegoly_idz_do_zbiorki">Punkt zbiórki: %1$s</string>
+    <string name="szczegoly_idz_do_schronienia">Miejsce schronienia: %1$s</string>
+    <string name="szczegoly_pozostan">Zamknij drzwi i okna, czekaj na dalsze komunikaty.</string>
+    <string name="szczegoly_dane_przykladowe">Dane przykładowe (symulowane) – prototyp dydaktyczny, nie jest to rzeczywisty system alarmowy.</string>
+    <string name="pole_instrukcje">Instrukcje</string>
+    <string name="pole_budynek">Budynek</string>
+    <string name="pole_adres">Adres</string>
+    <string name="pole_punkt_zbiorki">Punkt zbiórki (na zewnątrz)</string>
+    <string name="pole_miejsce_schronienia">Miejsce schronienia (wewnątrz)</string>
+    <string name="schronienie_z_pojemnoscia">%1$s, pojemność: %2$d os.</string>
+    <string name="pole_data">Data i godzina ogłoszenia</string>
+    <string name="pole_rodzaj_alarmu">Rodzaj alarmu</string>
+    <string name="alarm_testowy">Testowy (ćwiczenia)</string>
+    <string name="alarm_rzeczywisty">Rzeczywisty</string>
+    <string name="pole_potwierdzenia">Potwierdzenia odbioru</string>
+    <string name="potwierdzenia_wartosc">%1$d z %2$d odbiorców</string>
+    <string name="przycisk_potwierdz">Potwierdzam odbiór</string>
+    <string name="przycisk_potwierdzono">Odbiór potwierdzony</string>
+    <string name="przycisk_odwolaj">Odwołaj alarm (administrator)</string>
+
+    <!-- Formularz -->
+    <string name="formularz_tytul">Ogłoś alarm</string>
+    <string name="formularz_wymagane">Pola oznaczone * są wymagane</string>
+    <string name="pole_tytul_wym">Tytuł alarmu *</string>
+    <string name="pole_rodzaj">Rodzaj zagrożenia</string>
+    <string name="pole_budynek_wym">Budynek *</string>
+    <string name="pole_zachowanie">Wymagane zachowanie</string>
+    <string name="pole_data_wym">Data i godzina (RRRR-MM-DD GG:MM) *</string>
+    <string name="pole_odbiorcy_wym">Liczba odbiorców *</string>
+    <string name="pole_instrukcje_wym">Instrukcje dla użytkowników *</string>
+    <string name="pole_testowy">Alarm testowy</string>
+    <string name="pole_testowy_opis">Wyraźnie oznaczony jako ćwiczenia</string>
+    <string name="blad_tytul">Podaj tytuł alarmu</string>
+    <string name="blad_instrukcje">Podaj instrukcje dla użytkowników</string>
+    <string name="blad_budynek">Wybierz budynek objęty alarmem</string>
+    <string name="blad_data">Wpisz datę w formacie RRRR-MM-DD GG:MM</string>
+    <string name="blad_odbiorcy">Podaj dodatnią liczbę całkowitą</string>
+    <string name="przycisk_oglos">Ogłoś alarm</string>
+    <string name="formularz_zapisano">Alarm został dodany do listy</string>
+
+    <!-- Statystyki -->
+    <string name="stat_tytul">Statystyki alarmów</string>
+    <string name="stat_wszystkie">Wszystkie alarmy</string>
+    <string name="stat_aktywne">Aktywne alarmy</string>
+    <string name="stat_testowe">Alarmy testowe</string>
+    <string name="stat_potwierdzenia">Potwierdzenia odbioru</string>
+    <string name="stat_ewakuacje">Alarmy z ewakuacją</string>
+    <string name="stat_wg_kategorii">Według rodzaju zagrożenia</string>
+
+    <!-- Ustawienia -->
+    <string name="ustawienia_tytul">Ustawienia</string>
+    <string name="ustawienia_sekcja_alarmy">Alarmy i lokalizacja</string>
+    <string name="ustawienia_sekcja_wyglad">Wygląd</string>
+    <string name="ust_powiadomienia">Powiadomienia o alarmach</string>
+    <string name="ust_powiadomienia_opis">Informuj o nowych, zmienionych i odwołanych alarmach</string>
+    <string name="ust_dzwiek">Dźwięk i wibracje</string>
+    <string name="ust_dzwiek_opis">Sygnał nawet w trybie cichym</string>
+    <string name="ust_offline">Instrukcje offline</string>
+    <string name="ust_offline_opis">Zapisuj instrukcje i punkty zbiórki na urządzeniu</string>
+    <string name="ust_moj_budynek">Mój budynek (gdy lokalizacja jest niedostępna)</string>
+    <string name="ustawienia_o_aplikacji">Prototyp dydaktyczny – wersja 0.1 (etap 1: interfejs)</string>
+    <string name="opis_logo">Logo aplikacji Bezpieczny Kampus – tarcza z wykrzyknikiem</string>
+</resources>
