@@ -1,0 +1,76 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{font-family:Arial,sans-serif;background:#fff;margin:20px;color:#222}
+h1{font-size:20px;margin:0 0 4px}.sub{font-size:12px;color:#555;margin-bottom:16px}
+.row{display:flex;gap:22px;flex-wrap:wrap;align-items:flex-start}
+.ph{width:230px;height:470px;border:3px solid #222;border-radius:18px;display:flex;flex-direction:column;overflow:hidden;position:relative}
+.cap{font-size:13px;font-weight:bold;text-align:center;margin-top:6px}
+.bar{height:40px;border-bottom:2px solid #222;display:flex;align-items:center;padding:0 10px;font-weight:bold;font-size:13px;gap:8px}
+.c{flex:1;padding:8px;display:flex;flex-direction:column;gap:6px}
+.b{border:1.5px solid #555;border-radius:4px;font-size:10px;padding:4px;color:#333}
+.g{background:#e6e6e6}.dk{background:#555;color:#fff;text-align:center;font-weight:bold}
+.chips{display:flex;gap:4px}.chip{border:1.5px solid #555;border-radius:10px;font-size:9px;padding:2px 6px}
+.chip.on{background:#bbb}
+.nav{height:46px;border-top:2px solid #222;display:flex}.nav div{flex:1;font-size:9px;text-align:center;padding-top:6px}
+.nav div.on{background:#ccc;font-weight:bold}.ico{display:block;width:14px;height:14px;border:1.5px solid #333;margin:0 auto 2px;border-radius:3px}
+.fab{position:absolute}.note{font-size:10px;color:#666;font-style:italic}
+.tab{width:620px;height:390px;border:3px solid #222;border-radius:18px;display:flex;flex-direction:column;overflow:hidden}
+.split{flex:1;display:flex}.split>div{flex:1;display:flex;flex-direction:column}.split>div:first-child{border-right:2px solid #222}
+.sw{display:flex;justify-content:space-between;align-items:center}.tg{width:24px;height:12px;border:1.5px solid #333;border-radius:7px;background:#bbb}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+</style></head><body>
+<h1>Bezpieczny Kampus – szkice ekranów (wireframe)</h1><div class="sub">Zadanie 2.2 · siatka 8 dp · jeden główny przycisk na ekranie · dolny pasek nawigacji: Alarmy / Ogłoś / Statystyki / Ustawienia</div>
+<div class="row">
+<div><div class="ph"><div class="bar">Alarmy na kampusie</div><div class="c">
+<div class="b">🔍 Szukaj (tytuł lub budynek)</div>
+<div class="chips"><span class="chip on">Wszystkie</span><span class="chip">Pożar</span><span class="chip">Z powietrza</span><span class="chip">…</span></div>
+<div class="chips"><span class="chip">Tylko aktywne</span><span class="chip">Mój budynek</span></div>
+<div class="b g"><b>[Status] [Kategoria]</b><br>Tytuł alarmu<br>Budynek<br>Ogłoszono: data</div>
+<div class="b g"><b>[Status] [Kategoria]</b><br>Tytuł alarmu<br>Budynek<br>Ogłoszono: data</div>
+<div class="b g"><b>[Status] [Kategoria]</b><br>Tytuł alarmu<br>…</div>
+<div class="note">pusty stan: ilustracja + „Brak alarmów…”</div>
+</div><div class="nav"><div class="on"><i class="ico"></i>Alarmy</div><div><i class="ico"></i>Ogłoś</div><div><i class="ico"></i>Statystyki</div><div><i class="ico"></i>Ustawienia</div></div></div><div class="cap">1. Lista z wyszukiwaniem i filtrami</div></div>
+
+<div><div class="ph"><div class="bar">← Szczegóły alarmu</div><div class="c">
+<div class="chips"><span class="chip">Status</span><span class="chip">Kategoria</span></div>
+<div style="font-weight:bold;font-size:13px">Tytuł alarmu</div>
+<div class="b g"><b>CO ROBIĆ: Ewakuuj się</b><br>Punkt zbiórki: …</div>
+<div class="b">Instrukcje</div><div class="b">Budynek / adres</div><div class="b">Punkt zbiórki · Schronienie (pojemność)</div><div class="b">Data · rodzaj (test/rzeczywisty) · potwierdzenia</div>
+<div class="b dk">Potwierdzam odbiór</div><div class="b" style="text-align:center">Odwołaj alarm (admin)</div>
+</div><div class="nav"><div class="on"><i class="ico"></i>Alarmy</div><div><i class="ico"></i>Ogłoś</div><div><i class="ico"></i>Statystyki</div><div><i class="ico"></i>Ustawienia</div></div></div><div class="cap">2. Szczegóły alarmu</div></div>
+
+<div><div class="ph"><div class="bar">Ogłoś alarm</div><div class="c">
+<div class="note">Pola oznaczone * są wymagane</div>
+<div class="b">Tytuł alarmu *</div><div class="note" style="color:#900">↳ komunikat błędu pod polem</div>
+<div class="b">Rodzaj zagrożenia ▼</div><div class="b">Budynek * ▼</div><div class="b">Wymagane zachowanie ▼</div>
+<div class="b">Data i godzina *</div><div class="b">Liczba odbiorców *</div><div class="b" style="height:34px">Instrukcje *</div>
+<div class="sw b">Alarm testowy <span class="tg"></span></div>
+<div class="b dk">Ogłoś alarm</div><div class="note">(przewijany, imePadding)</div>
+</div><div class="nav"><div><i class="ico"></i>Alarmy</div><div class="on"><i class="ico"></i>Ogłoś</div><div><i class="ico"></i>Statystyki</div><div><i class="ico"></i>Ustawienia</div></div></div><div class="cap">3. Formularz z walidacją</div></div>
+
+<div><div class="ph"><div class="bar">Statystyki alarmów</div><div class="c">
+<div class="b g">Wszystkie alarmy<br><b style="font-size:14px">12</b></div><div class="b g">Aktywne<br><b style="font-size:14px">3</b></div><div class="b g">Testowe<br><b style="font-size:14px">3</b></div>
+<div class="b g">Potwierdzenia odbioru 82%<br><span style="display:block;height:5px;background:#555;width:82%"></span></div>
+<div class="b g">Alarmy z ewakuacją<br><span style="display:block;height:5px;background:#555;width:66%"></span></div>
+<div style="font-weight:bold;font-size:11px">Według rodzaju zagrożenia</div>
+<div class="b g">Pożar 4 ▬▬▬</div><div class="b g">Z powietrza 2 ▬</div>
+</div><div class="nav"><div><i class="ico"></i>Alarmy</div><div><i class="ico"></i>Ogłoś</div><div class="on"><i class="ico"></i>Statystyki</div><div><i class="ico"></i>Ustawienia</div></div></div><div class="cap">4. Statystyki</div></div>
+
+<div><div class="ph"><div class="bar">Ustawienia</div><div class="c">
+<div style="font-weight:bold;font-size:11px">Alarmy i lokalizacja</div>
+<div class="sw b">Powiadomienia o alarmach <span class="tg"></span></div><div class="sw b">Dźwięk i wibracje <span class="tg"></span></div><div class="sw b">Instrukcje offline <span class="tg"></span></div>
+<div class="b">Mój budynek ▼</div>
+<div style="font-weight:bold;font-size:11px">Wygląd</div>
+<div class="b">◉ Zgodnie z systemem<br>○ Jasny<br>○ Ciemny</div>
+<div class="b">[LOGO] Bezpieczny Kampus · wersja</div>
+</div><div class="nav"><div><i class="ico"></i>Alarmy</div><div><i class="ico"></i>Ogłoś</div><div><i class="ico"></i>Statystyki</div><div class="on"><i class="ico"></i>Ustawienia</div></div></div><div class="cap">5. Ustawienia</div></div>
+</div>
+<div class="row" style="margin-top:24px">
+<div><div class="tab"><div class="split"><div><div class="bar">Alarmy na kampusie</div><div class="c">
+<div class="b">🔍 Szukaj</div><div class="chips"><span class="chip on">Wszystkie</span><span class="chip">Pożar</span><span class="chip">…</span><span class="chip">Tylko aktywne</span></div>
+<div class="b g">Karta alarmu</div><div class="b" style="background:#bbb"><b>Karta wybrana (wyróżniona)</b></div><div class="b g">Karta alarmu</div></div></div>
+<div><div class="bar">Szczegóły alarmu</div><div class="c"><div class="b g"><b>CO ROBIĆ</b> + punkt zbiórki</div><div class="b">Instrukcje</div><div class="b">Budynek · punkt zbiórki · schronienie</div><div class="b dk">Potwierdzam odbiór</div></div></div></div>
+<div class="nav"><div class="on"><i class="ico"></i>Alarmy</div><div><i class="ico"></i>Ogłoś</div><div><i class="ico"></i>Statystyki</div><div><i class="ico"></i>Ustawienia</div></div></div>
+<div class="cap">6. Tablet (szerokość ≥ 600 dp): lista i szczegóły obok siebie</div></div>
+<div><div class="tab" style="width:420px"><div class="bar">Statystyki alarmów</div><div class="c"><div class="grid2"><div class="b g">Wszystkie</div><div class="b g">Aktywne</div><div class="b g">Testowe</div><div class="b g">Potwierdzenia ▬▬</div><div class="b g">Ewakuacje ▬</div></div><div class="note">na szerokim ekranie karty w dwóch kolumnach</div></div>
+<div class="nav"><div><i class="ico"></i>Alarmy</div><div><i class="ico"></i>Ogłoś</div><div class="on"><i class="ico"></i>Statystyki</div><div><i class="ico"></i>Ustawienia</div></div></div><div class="cap">7. Tablet: statystyki w 2 kolumnach</div></div>
+</div></body></html>
